@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<import resource="config/velocity-config.xml"/>
+	<import resource="config/db-config.xml"/>
+	
+	<bean id="resourceConfiguration" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	    <property name="location">
+	        <value>/WEB-INF/spring/config/info.properties</value>
+	    </property>
+	</bean>
+	
+	
+</beans>

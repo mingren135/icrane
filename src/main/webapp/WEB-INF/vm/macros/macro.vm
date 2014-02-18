@@ -1,0 +1,3 @@
+#macro(test)  
+    hello world!我是macro
+#end
